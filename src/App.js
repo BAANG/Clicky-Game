@@ -13,7 +13,7 @@ import Footer from './components/Footer'
 class App extends Component {
 
   state = {
-    characters: characters,
+    characters: [],
     userPicks: [],
     hiScore: 0,
     message: ""
@@ -29,26 +29,29 @@ class App extends Component {
   }
 
   render() {
-    <div>
-      <InfoHeader />
+    return (
+      <div>
+        <InfoHeader />
 
-      <Hero>
-        <h1 className="display-1">
-          Clicky Game
+        <Hero>
+          <h1 className="display-1">
+            Clicky Game
       </h1>
-        <p className="lead">
-          Click on each charater card only ONCE! Test your memory and see how high you can score!
+          <p className="lead">
+            Click on each charater card only ONCE! Test your memory and see how high you can score!
          </p>
-      </Hero>
+        </Hero>
 
-      <Container>
-        {/* Populate with each of the character cards */}
-      </Container>
+        <Container>
+          {/* Populate with each of the character cards */}
+        </Container>
 
-      <Footer>
-        
-      </Footer>
-    </div>
+        <Footer>
+
+        </Footer>
+      </div>
+
+    )
   }
 
 }
