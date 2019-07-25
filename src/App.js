@@ -10,6 +10,15 @@ class App extends Component {
     hiScore: 0,
     message: ""
   }
+
+  handleUserPick = event => {
+    // Obtain character id and name
+    // Check if picked
+      // (!picked) push to userPicks, increase score by 1
+
+    // Shuffle character cards
+
+  }
 }
 
 export default App;

@@ -1,6 +1,5 @@
 import React from 'react';
 import './style.css';
-import { url } from 'inspector';
 
 const CharacterCard = ({ id, name, image, handleUserPick }) => (
     <div>
@@ -14,3 +13,5 @@ const CharacterCard = ({ id, name, image, handleUserPick }) => (
         </div>
     </div>
 )
+
+export default CharacterCard;
