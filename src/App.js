@@ -6,6 +6,7 @@ import Container from './components/Container'
 import Hero from './components/Hero'
 import InfoHeader from './components/InfoHeader'
 import Footer from './components/Footer'
+import characters from './characters.json'
 
 
 
@@ -13,7 +14,7 @@ import Footer from './components/Footer'
 class App extends Component {
 
   state = {
-    characters: [],
+    characters: characters,
     userPicks: [],
     hiScore: 0,
     message: ""
@@ -43,7 +44,15 @@ class App extends Component {
         </Hero>
 
         <Container>
-          {/* Populate with each of the character cards */}
+          {this.state.characters.map(card => {
+            <CharacterCard
+              id={card.id}
+              name={card.name}
+              image={card.image}
+              description={card.description}
+              onClick={this.handleUserPick}
+            />
+          })}
         </Container>
 
         <Footer>
