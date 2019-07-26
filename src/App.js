@@ -17,7 +17,8 @@ class App extends Component {
     characters: characters,
     userPicks: [],
     hiScore: 0,
-    message: ""
+    message: "",
+    content: []
   }
 
   handleUserPick = event => {
@@ -35,24 +36,42 @@ class App extends Component {
         <InfoHeader />
 
         <Hero>
-          <h1 className="display-1">
-            Clicky Game
+          <h1 className="display-1 text-center">
+            Final Fantasy Memory Game
       </h1>
-          <p className="lead">
-            Click on each charater card only ONCE! Test your memory and see how high you can score!
+          <p className="lead text-center">
+            Click on each character card only ONCE! Test your memory and see how high you can score!
          </p>
         </Hero>
 
         <Container>
-          {this.state.characters.map(card => {
-            <CharacterCard
-              id={card.id}
-              name={card.name}
-              image={card.image}
-              description={card.description}
-              onClick={this.handleUserPick}
-            />
-          })}
+          <div className='row'>
+            {this.state.characters.map((card) => {
+              return (
+                <CharacterCard
+                  id={card.id}
+                  name={card.name}
+                  image={card.image}
+                  description={card.description}
+                  onClick={this.handleUserPick}
+                />
+              )
+            })}
+          </div>
+
+          {/* <div className='row'>
+            {this.state.characters.map(card => {
+              return (
+                <CharacterCard
+                  id={card.id}
+                  name={card.name}
+                  image={card.image}
+                  description={card.description}
+                  onClick={this.handleUserPick}
+                />
+              )
+            })}
+          </div> */}
         </Container>
 
         <Footer>
