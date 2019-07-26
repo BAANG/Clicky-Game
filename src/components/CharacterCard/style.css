@@ -1,6 +1,12 @@
 .card {
     width: 20vw;
     height: 100%;
+    border: 1px solid black;
+    z-index: 5;
+}
+
+.card-cols {
+    margin-bottom: 10px;
 }
 
 .card-img-top {

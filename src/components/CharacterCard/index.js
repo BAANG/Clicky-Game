@@ -2,21 +2,35 @@ import React from 'react';
 import './style.css';
 
 const CharacterCard = ({ id, name, image, description, handleUserPick }) => (
-    <div className='col-3'>
+    <div className='col-3 card-cols'>
         <div
-            className="card"
+            className="card w-100"
             key={id}
             data-id={id}
             name={name}
-            onClick={handleUserPick}
-            style={{width: '18rem'}}
+            style={{ width: '18rem' }}
         >
-            <div className='card-body'>
-                <img className='card-img-top' src={image} alt={name} />
-                <p className='card-text text-center'>
-                <strong>- The {name} -</strong>
-                <hr />
-                <em>"{description}"</em>
+            <div
+                className='card-body'
+                onClick={handleUserPick}
+                data-id={id}
+                name={name}
+            >
+                <img className='card-img-top' src={image} alt={name}
+                    data-id={id}
+                    name={name} />
+                <p className='card-text text-center'
+                    data-id={id}
+                    name={name} >
+                    <strong
+                        data-id={id}
+                        name={name}>- The {name} -
+                    </strong>
+                    <hr />
+                    <em
+                        data-id={id}
+                        name={name}>"{description}"
+                    </em>
                 </p>
             </div>
         </div>

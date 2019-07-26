@@ -23,6 +23,10 @@ class App extends Component {
 
   handleUserPick = event => {
     // Obtain character id and name
+    console.log('Name:', event.target.getAttribute('name'));
+    let cardId = event.target.getAttribute('data-id')
+    console.log('ID:', cardId)
+
     // Check if picked
     // (!picked) push to userPicks, increase score by 1
 
@@ -53,25 +57,11 @@ class App extends Component {
                   name={card.name}
                   image={card.image}
                   description={card.description}
-                  onClick={this.handleUserPick}
+                  handleUserPick={this.handleUserPick}
                 />
               )
             })}
           </div>
-
-          {/* <div className='row'>
-            {this.state.characters.map(card => {
-              return (
-                <CharacterCard
-                  id={card.id}
-                  name={card.name}
-                  image={card.image}
-                  description={card.description}
-                  onClick={this.handleUserPick}
-                />
-              )
-            })}
-          </div> */}
         </Container>
 
         <Footer>
