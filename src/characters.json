@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "name": "Archer",
+        "image": "../public/assets/img/Archers.jpg",
+        "description": ""
+    },
+    {
+        "id": 2,
+        "name": "Bard",
+        "image": "../public/assets/img/Bards.jpg",
+        "description": ""
+    },
+    {
+        "id": 3,
+        "name": "Black Mage",
+        "image": "../public/assets/img/BlkMages.jpg",
+        "description": ""
+    },
+    {
+        "id": 4,
+        "name": "Calculator",
+        "image": "../public/assets/img/Calculators.jpg",
+        "description": ""
+    },
+    {
+        "id": 5,
+        "name": "Chemist",
+        "image": "../public/assets/img/Chemists.jpg",
+        "description": ""
+    },
+    {
+        "id": 6,
+        "name": "Dancer",
+        "image": "../public/assets/img/Dancer.jpg",
+        "description": ""
+    },
+    {
+        "id": 7,
+        "name": "Dragoon",
+        "image": "../public/assets/img/Dragoons.jpg",
+        "description": ""
+    },
+    {
+        "id": 8,
+        "name": "Geomancer",
+        "image": "../public/assets/img/Geomancers.jpg",
+        "description": ""
+    },
+    {
+        "id": 9,
+        "name": "Knight",
+        "image": "../public/assets/img/Knights.jpg",
+        "description": ""
+    },
+    {
+        "id": 10,
+        "name": "Mediator",
+        "image": "../public/assets/img/Mediator.jpg",
+        "description": ""
+    },
+    {
+        "id": 11,
+        "name": "Mime",
+        "image": "../public/assets/img/Mimes.jpg",
+        "description": ""
+    },
+    {
+        "id": 12,
+        "name": "Monk",
+        "image": "../public/assets/img/Monks.jpg",
+        "description": ""
+    },
+    {
+        "id": 13,
+        "name": "Mystic",
+        "image": "../public/assets/img/Mystics.jpg",
+        "description": ""
+    },
+    {
+        "id": 14,
+        "name": "Ninja",
+        "image": "../public/assets/img/Ninjas.jpg",
+        "description": ""
+    },
+    {
+        "id": 15,
+        "name": "Samurai",
+        "image": "../public/assets/img/Samurais.jpg",
+        "description": ""
+    },
+    {
+        "id": 16,
+        "name": "Squire",
+        "image": "../public/assets/img/Squires.jpg",
+        "description": ""
+    },
+    {
+        "id": 17,
+        "name": "Summoner",
+        "image": "../public/assets/img/Summoners.jpg",
+        "description": ""
+    },
+    {
+        "id": 18,
+        "name": "Thief",
+        "image": "../public/assets/img/Thiefs.jpg",
+        "description": ""
+    },
+    {
+        "id": 19,
+        "name": "Time Mage",
+        "image": "../public/assets/img/TimeMages.jpg",
+        "description": ""
+    },
+    {
+        "id": 20,
+        "name": "White Mage",
+        "image": "../public/assets/img/WhtMages.jpg",
+        "description": ""
+    },
+]
