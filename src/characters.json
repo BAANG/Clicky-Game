@@ -115,6 +115,30 @@
     },
     {
         "id": 20,
+        "name": "Dark Knight",
+        "image": "assets/img/DarkKnights.jpg",
+        "description": "This warrior exchanges life for power, using Darkness to disintegrate all who stand before him..."
+    },
+    {
+        "id": 21,
+        "name": "Onion Knight",
+        "image": "assets/img/OnionKnights.jpg",
+        "description": "Although able to equip all weapons, this sad warrior excels at none, and is far from being the most powerful..."
+    },
+    {
+        "id": 22,
+        "name": "Sword Saint",
+        "image": "assets/img/Orlandu.jpg",
+        "description": "A peerless warrior who commands an entire knightly order. It is said that none can match his swordplay..."
+    },
+    {
+        "id": 23,
+        "name": "Sky Pirate",
+        "image": "assets/img/SkyPirate.jpg",
+        "description": "A pirate who sails the open sky, free from all laws and obligations. He never lets a mark escape..."
+    },
+    {
+        "id": 24,
         "name": "White Mage",
         "image": "assets/img/WhtMages.jpg",
         "description": "A warrior who taps into the powers of the divine, using White Magicks to cast spells of recovery and protection..."

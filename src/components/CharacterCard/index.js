@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css';
 
 const CharacterCard = ({ id, name, image, description, handleUserPicks }) => (
-    <div className='col-3 card-cols'>
+    <div className='col-2 card-cols'>
         <div
             className="card w-100"
             key={id}
@@ -24,7 +24,7 @@ const CharacterCard = ({ id, name, image, description, handleUserPicks }) => (
                     name={name} >
                     <strong
                         data-id={id}
-                        name={name}>- The {name} -
+                        name={name}>-The {name}-
                     </strong>
                     <hr />
                     <em

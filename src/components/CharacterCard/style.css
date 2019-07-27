@@ -12,13 +12,21 @@
 .card-img-top {
     width: 100%;
     margin: auto;
-    height: 12vw;
+    height: 6vw;
     object-fit: cover;
-    object-position: 0 0;
+    object-position: 50% 0;
     border: 1px solid black;
     border-radius: 10px;
 }
 
+p {
+    line-height: 80% !important;
+}
+
 em {
     font-size: 12px;
+}
+
+strong {
+    font-size: 13px;
 }
