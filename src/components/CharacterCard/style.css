@@ -3,7 +3,17 @@
     height: 100%;
     border: 1px solid black;
     z-index: 2;
+    -webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
 }
+
+.card:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    box-shadow: 10px 15px 11px rgba(33,33,33,.3); 
+    z-index: 3;
+  }
 
 .card-cols {
     margin-bottom: 10px;
