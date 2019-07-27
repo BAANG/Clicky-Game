@@ -18,7 +18,6 @@ class App extends Component {
     userPicks: [],
     hiScore: 0,
     message: "",
-    content: []
   }
 
   handleUserPick = event => {
@@ -33,7 +32,21 @@ class App extends Component {
     // Shuffle character cards
   }
 
-  shuffleArray = (array) => {
+  checkPick = (name, next) => {
+    const newState = { ...this.state }; // Allows us to keep track of our previous game state.
+    if (newState.userPicks.includes(name)) {
+      newState.message = `You've already guessed The ${name}! Too bad.`;
+      newState.userPicks = []; // Resets to empty array for game restart.
+      this.setState(this.state = newState);
+    } else { // On succesful guess...
+      newState.userPick.push(name);
+      newState.message = `You've picked The ${name}! Good job!`;
+      this.setState(this.state = newState)
+    }
+    next(newState, this.message)
+  }
+
+  shuffleArray = (array) => { // Assigns random index to established array.
     let j;
     let temp;
     let i;
@@ -44,6 +57,10 @@ class App extends Component {
       array[j] = temp;
     }
     return array;
+  }
+
+  shuffleCards = () => {
+    this.setState(this.setState.characters = this.shuffleArray(this.state.characters)) //Sets character state to shuffled array.
   }
 
   render() {
