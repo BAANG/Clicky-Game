@@ -17,7 +17,7 @@ class App extends Component {
     characters: characters,
     userPicks: [],
     hiScore: 0,
-    message: "",
+    message: "Start Game!",
   }
 
   handleUserPicks = event => {
@@ -82,14 +82,14 @@ class App extends Component {
         hiScore={this.state.hiScore}
         score={this.state.userPicks.length} />
 
-        <Hero>
+        {/* <Hero>
           <h1 className="display-1 text-center">
             Final Fantasy Memory Game
       </h1>
           <p className="lead text-center">
             Click on each character card only ONCE! Test your memory and see how high you can score!
          </p>
-        </Hero>
+        </Hero> */}
 
         <Container>
           <div className='row'>
@@ -107,9 +107,7 @@ class App extends Component {
           </div>
         </Container>
 
-        <Footer>
-
-        </Footer>
+        <Footer />
       </div>
 
     )
