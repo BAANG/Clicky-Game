@@ -27,10 +27,10 @@ const CharacterCard = ({ id, name, image, description, handleUserPicks }) => (
                         name={name}>-The {name}-
                     </strong>
                     <hr />
-                    <em
-                        data-id={id}
-                        name={name}>"{description}"
-                    </em>
+                        <em
+                            data-id={id}
+                            name={name}>"{description}"
+                        </em>
                 </p>
             </div>
         </div>

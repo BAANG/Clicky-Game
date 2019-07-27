@@ -6,7 +6,7 @@
     -webkit-transition: all .25s ease-in-out;
     transition: all .25s ease-in-out;
     border-radius: 8px;
-    background-color: rgb(255, 243, 227);
+    background-color: rgb(255, 243, 227, 0.95);
 }
 
 .card:hover {
