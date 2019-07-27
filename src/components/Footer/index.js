@@ -9,20 +9,24 @@ function Footer() {
             <div className='row'>
                 <div
                     className="col-2 footer-info text-center">
-                    Made by Christopher Celestino
+                    <small>
+                        Made by Christopher Celestino
+                    </small>
                 </div>
                 <div
                     className="col-8 footer-info text-center">
+                    <hr />
                     <p>
-                    <small>
-                            Directions:
+                        <small>
+                            - How to Play: -
                     <br />This is a game of memory. Pick each card only once. If you select a card for a second time, you lose.
                     </small>
                     </p>
+                    <hr />
                 </div>
                 <div
-                    className="col-2">
-                        <audio src={bgAudio} controls autoPlay loop/>
+                    className="col-2 footer-info">
+                    <audio src={bgAudio} controls autoPlay loop />
                 </div>
             </div>
         </div>

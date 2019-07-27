@@ -5,6 +5,8 @@
     z-index: 2;
     -webkit-transition: all .25s ease-in-out;
     transition: all .25s ease-in-out;
+    border-radius: 8px;
+    background-color: rgb(255, 243, 227);
 }
 
 .card:hover {

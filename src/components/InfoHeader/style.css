@@ -12,3 +12,7 @@
 .user-info {
     margin: auto;
 }
+
+#info-msg {
+    font-size: 30px;
+}

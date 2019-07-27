@@ -8,16 +8,19 @@ function InfoHeader(props) {
             id="info-header">
             <div
                 className="col-2 offset-2 user-info text-center">
-                    Final Fantasy Tactics
+                    - Final Fantasy Tactics -
                     <br />Memory Game
             </div>
             <div
                 className="col-8 user-info text-center">
-                   {props.message}
+                    <hr />
+                   <span id='info-msg'>{props.message}</span>
+                   <hr />
             </div>
             <div
                 className="col-2 user-info text-center">
                     Score: {props.score} | Hi-Score: {props.hiScore}
+                    
             </div>
         </div>
     )

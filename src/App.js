@@ -20,6 +20,8 @@ class App extends Component {
     message: "Start Game!",
   }
 
+
+
   handleUserPicks = event => {
     const name = event.target.getAttribute('name');
     console.log('Name:', event.target.getAttribute('name'))
