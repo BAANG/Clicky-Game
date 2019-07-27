@@ -21,40 +21,32 @@ class App extends Component {
   }
 
   handleUserPicks = event => {
-    // Obtain character id and name
-      // console.log('Name:', event.target.getAttribute('name'));
-      // console.log('ID:', cardId)
-    const name = event.target.getAttribute('name').value;
+    const name = event.target.getAttribute('name');
+    console.log('Name:', event.target.getAttribute('name'))
     this.checkPick(name, this.setScore)
     this.shuffleCards()
-
-    // Check if picked
-    // (!picked) push to userPicks, increase score by 1
-
-    // Shuffle character cards
   }
 
-  checkPick = (name, next) => {
+  checkPick = (name, callback) => {
     const newState = { ...this.state }; // Allows us to keep track of our previous game state. And update the values at the same time when setting this.state to newState.
     if (newState.userPicks.includes(name)) {
       newState.message = `You've already guessed The ${name}! Too bad.`;
       newState.userPicks = []; // Resets to empty array for game restart.
-      this.setState(this.state = newState);
+      this.setState(newState);
     } else { // On succesful guess...
       newState.userPicks.push(name);
       newState.message = `You've picked The ${name}! Good job!`;
-      this.setState(this.state = newState)
+      this.setState(newState)
       console.log(this.state)
     }
-    next(newState, this.message)
+    callback(newState, this.message)
   }
 
-  setScore = (newState, next) => {
+  setScore = (newState) => {
     if (newState.userPicks.length > newState.hiScore) {
       newState.hiScore ++;
-      this.setState(this.state = newState)
+      this.setState(newState)
     }
-    next(newState)
   }
 
   shuffleArray = (array) => { // Assigns random index to established array.
@@ -78,7 +70,7 @@ class App extends Component {
     if (newState.userPicks.length === this.characters.length) {
       newState.message = 'You win!';
       newState.userPicks = [];
-      this.setState(this.state = newState)
+      this.setState(newState)
     }
   }
 

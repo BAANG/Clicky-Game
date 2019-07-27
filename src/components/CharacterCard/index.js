@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 
-const CharacterCard = ({ id, name, image, description, handleUserPick }) => (
+const CharacterCard = ({ id, name, image, description, handleUserPicks }) => (
     <div className='col-3 card-cols'>
         <div
             className="card w-100"
@@ -12,7 +12,7 @@ const CharacterCard = ({ id, name, image, description, handleUserPick }) => (
         >
             <div
                 className='card-body'
-                onClick={handleUserPick}
+                onClick={handleUserPicks}
                 data-id={id}
                 name={name}
             >
