@@ -31,7 +31,19 @@ class App extends Component {
     // (!picked) push to userPicks, increase score by 1
 
     // Shuffle character cards
+  }
 
+  shuffleArray = (array) => {
+    let j;
+    let temp;
+    let i;
+    for (i = array.length - 1; i > 0; i--) {
+      j = Math.floor(Math.random() * (i + 1));
+      temp = a[i];
+      array[i] = array[j];
+      array[j] = temp;
+    }
+    return array;
   }
 
   render() {
