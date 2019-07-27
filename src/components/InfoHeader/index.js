@@ -1,22 +1,22 @@
 import React from 'react';
 import './style.css';
 
-function InfoHeader() {
+function InfoHeader(props) {
     return (
         <div 
             className="row"
             id="info-header">
             <div
                 className="col-4 user-info">
-                    {/* Title */}
+                    Made by Christopher Celestino
             </div>
             <div
                 className="col-4 user-info">
-                    {/* Instructions/Alert */}
+                   {props.message}
             </div>
             <div
                 className="col-4 user-info">
-                    {/* Score */}
+                    Score: {props.score} | Hi-Score: {props.hiScore}
             </div>
         </div>
     )
