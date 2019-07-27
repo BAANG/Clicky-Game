@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.css';
+import bgAudio from '../Sounds/fftpubtheme.mp3'
 
 function Footer() {
     return (
@@ -21,7 +22,7 @@ function Footer() {
                 </div>
                 <div
                     className="col-2">
-
+                        <audio src={bgAudio} controls autoPlay loop/>
                 </div>
             </div>
         </div>
