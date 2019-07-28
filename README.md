@@ -16,8 +16,9 @@ This application is a simple memory game in which the user must select cards wit
 
 ## Code Explanation
 
+The interactive elements and game logic is dynamically generated and updated and managed by updating the 'state' within React, forcing the application to re-render the DOM every time the App.state is updated.
+
 ```js
-// The interactive elements and game logic is dynamically generated and updated and managed by updating the 'state' within React, forcing the application to re-render the DOM every time the App.state is updated.
 
 class App extends Component {
 
@@ -29,8 +30,9 @@ class App extends Component {
   }
 ```
 
+handleUserPicks is the onClick function that is made a property on all of the dynamically generated character cards. It obtains the 'name' value of each of the card and prompts the application to then verify whether the user picked a unique card succesfully, or insuccesfully. Regardless of the success, clicking on a card will force the array to shuffle, update the state, and re-render the cards in the new re-shuffled order.
+
 ```js
-// handleUserPicks is the onClick function that is made a property on all of the dynamically generated character cards. It obtains the 'name' value of each of the card and prompts the application to then verify whether the user picked a unique card succesfully, or insuccesfully. Regardless of the success, clicking on a card will force the array to shuffle, update the state, and re-render the cards in the new re-shuffled order.
 
 handleUserPicks = event => {
     const name = event.target.getAttribute('name');
@@ -41,8 +43,9 @@ handleUserPicks = event => {
 
 ```
 
+Handles the shuffling of the characters array.
+
 ```js
-// Handles the shuffling of the characters array.
 
 shuffleArray = (array) => {
     let j;
@@ -61,9 +64,9 @@ shuffleCards = () => {
     this.setState(this.setState.characters = this.shuffleArray(this.state.characters))
 }
 ```
+In the checkPick function, when updating the state. I update all of the new values into a variable 'newState' so that when mutating 'this.state' all of the new values will be changed at the same time, keeping the DOM from re-rendering multiple times for a user action.
 
 ```js
-// In the checkPick function, when updating the state. I update all of the new values into a variable 'newState' so that when mutating 'this.state' all of the new values will be changed at the same time, keeping the DOM from re-rendering multiple times for a user action.
 
  checkPick = (name, callback) => {
     const newState = { ...this.state };
@@ -79,6 +82,7 @@ shuffleCards = () => {
     }
     callback(newState, this.message)
   }
+  
 ```
 
 ---
