@@ -92,16 +92,11 @@ In the checkPick function, when updating the state. I update all of the new valu
 | Technologies Used |  |
 | :---: | :--- |
 | HTML5 | |
-|
 | CSS3 | |
-|
 | JavaScript | |
-|
 | ReactJS | https://github.com/facebook/react |
-|
 | Node.js |  https://nodejs.org/ |
 | Node Package Manager `(NPM)` | https://npmjs.com/
-|
 | Git | https://git-scm.com/ |
 | GitHub | https://github.com/
 
